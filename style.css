@@ -1,0 +1,117 @@
+:root {
+    --color-Soft-blue: hsl(215, 51%, 70%);
+    --color-Cyan: hsl(178, 100%, 50%);
+    --color-Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --color-Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --color-Very-dark-blue-line: hsl(215, 32%, 27%);
+    --color-White: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background: var(--color-Very-dark-blue-main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    border-radius: 10px;
+    background: var(--color-Very-dark-blue-card-BG);
+}
+
+.profile {
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+.profile_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.heading:hover{
+    color: var(--color-Cyan);
+}
+
+.heading{
+    color: var(--color-White);
+    margin-inline: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.paragraph {
+    color: var(--color-Soft-blue);
+    margin: 10px 20px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.box {
+    margin: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    color: var(--color-Soft-blue);
+    justify-content: space-between;
+    border-bottom: 2px solid var(--color-Very-dark-blue-line);
+}
+
+.box_price {
+    display: flex;
+    align-items: center;
+    color: var(--color-Cyan);
+}
+
+.box img{
+    margin-right: 10px;
+}
+
+.box_day {
+    display: flex;
+    align-items: center;
+}
+
+.created {
+    display: flex;
+    align-items: center;
+    margin-inline: 20px;
+    margin-bottom: 20px;
+}
+
+.created_img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid var(--color-White);
+}
+.created_text{
+    color: var(--color-Soft-blue);
+    font-size: 16px;
+}
+.created_creation {
+    text-decoration: none;
+    color: var(--color-White);
+    font-weight: 300;
+}
+
+.created_creation:hover{
+    color: var(--color-Cyan);
+}
